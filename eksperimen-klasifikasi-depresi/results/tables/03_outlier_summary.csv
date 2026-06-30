@@ -1,0 +1,10 @@
+fitur,Q1,Q3,IQR,batas_bawah,batas_atas,jumlah_outlier,pct_outlier
+age,14.0,18.0,4.0,8.0,24.0,0,0.0
+daily_social_media_hours,3.0,6.5,3.5,-2.25,11.75,0,0.0
+sleep_hours,5.0,7.5,2.5,1.25,11.25,0,0.0
+screen_time_before_sleep,1.1,2.4,1.3,-0.85,4.35,0,0.0
+academic_performance,2.5,3.49,0.99,1.01,4.98,0,0.0
+physical_activity,0.5,1.5,1.0,-1.0,3.0,0,0.0
+stress_level,3.0,8.0,5.0,-4.5,15.5,0,0.0
+anxiety_level,3.0,8.0,5.0,-4.5,15.5,0,0.0
+addiction_level,3.0,8.0,5.0,-4.5,15.5,0,0.0

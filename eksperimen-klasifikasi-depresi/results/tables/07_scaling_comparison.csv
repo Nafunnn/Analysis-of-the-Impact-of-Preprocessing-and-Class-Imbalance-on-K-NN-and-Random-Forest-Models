@@ -1,0 +1,16 @@
+fitur,train_mean_sebelum,train_std_sebelum,train_mean_sesudah,train_std_sesudah
+age,15.922,2.045,0.0,1.0
+gender,0.513,0.5,0.0,1.0
+daily_social_media_hours,4.71,2.033,-0.0,1.0
+sleep_hours,6.312,1.446,0.0,1.0
+screen_time_before_sleep,1.758,0.715,0.0,1.0
+academic_performance,2.996,0.573,-0.0,1.0
+physical_activity,1.009,0.583,0.0,1.0
+social_interaction_level,0.965,0.813,0.0,1.0
+stress_level,5.696,2.966,-0.0,1.0
+anxiety_level,5.897,2.881,0.0,1.0
+addiction_level,5.538,2.881,0.0,1.0
+screen_time_ratio,0.294,0.142,-0.0,1.0
+platform_Both,0.324,0.468,0.0,1.0
+platform_Instagram,0.337,0.473,-0.0,1.0
+platform_TikTok,0.339,0.474,-0.0,1.0

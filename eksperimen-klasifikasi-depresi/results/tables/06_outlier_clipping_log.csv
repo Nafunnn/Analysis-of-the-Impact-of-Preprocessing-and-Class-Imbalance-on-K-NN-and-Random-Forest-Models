@@ -1,0 +1,10 @@
+fitur,batas_bawah,batas_atas,outlier_sebelum,outlier_sesudah
+age,8.0,24.0,0,0
+daily_social_media_hours,-2.25,11.75,0,0
+sleep_hours,1.25,11.25,0,0
+screen_time_before_sleep,-0.85,4.35,0,0
+academic_performance,1.01,4.98,0,0
+physical_activity,-1.0,3.0,0,0
+stress_level,-4.5,15.5,0,0
+anxiety_level,-4.5,15.5,0,0
+addiction_level,-4.5,15.5,0,0

@@ -1,0 +1,8 @@
+tahap,nilai
+Raw samples,1500
+After cleaning,1500
+Features after encoding,15
+Train samples,1200
+Test samples,300
+Positive class (train),120
+Positive class (test),30
