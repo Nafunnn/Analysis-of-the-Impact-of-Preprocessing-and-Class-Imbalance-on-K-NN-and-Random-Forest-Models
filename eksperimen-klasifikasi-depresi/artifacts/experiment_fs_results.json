@@ -1,0 +1,33 @@
+{
+  "best_scenario": "FS3",
+  "best_method": "Mutual Information (k=5)",
+  "test_f1": 0.9831,
+  "test_roc_auc": 0.9987,
+  "best_k_chi2": 8,
+  "best_k_mi": 5,
+  "n_pca_components": 12,
+  "chi2_selected_features": [
+    "sleep_hours",
+    "stress_level",
+    "anxiety_level",
+    "daily_social_media_hours",
+    "screen_time_ratio",
+    "platform_Instagram",
+    "gender",
+    "platform_TikTok"
+  ],
+  "mi_selected_features": [
+    "sleep_hours",
+    "stress_level",
+    "daily_social_media_hours",
+    "anxiety_level",
+    "physical_activity"
+  ],
+  "overlap_features": [
+    "anxiety_level",
+    "daily_social_media_hours",
+    "sleep_hours",
+    "stress_level"
+  ],
+  "shap_model_scenario": "FS3"
+}

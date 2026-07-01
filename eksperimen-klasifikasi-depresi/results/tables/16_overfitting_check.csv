@@ -1,0 +1,5 @@
+skenario,metode,fitur,cv_accuracy,cv_precision,cv_recall,cv_f1,cv_roc_auc,test_f1,test_roc_auc,delta_f1
+FS0,Tanpa Seleksi (Baseline),Semua 14 fitur,0.99,0.9913,0.9083,0.9476,0.9994,0.9091,0.997,-0.0385
+FS1,PCA (>=95% variansi),12 komponen utama,0.9575,0.9523,0.6083,0.7387,0.989,0.6667,0.9644,-0.072
+FS2,Chi-Square (k=8),Top-8 fitur Chi-Square,0.9942,0.9913,0.95,0.9698,0.9993,0.9831,0.998,0.0133
+FS3,Mutual Information (k=5),Top-5 fitur MI,0.9908,0.9739,0.9333,0.9528,0.998,0.9831,0.9987,0.0303

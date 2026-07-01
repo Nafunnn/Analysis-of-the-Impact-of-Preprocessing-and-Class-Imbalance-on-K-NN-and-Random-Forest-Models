@@ -1,3 +1,5 @@
+# Fokus riset: Perbandingan Feature Selection (PCA, Chi-Square, Mutual Information) + SHAP
+
 pandas>=2.0.0
 numpy>=1.24.0
 matplotlib>=3.7.0
@@ -5,5 +7,96 @@ seaborn>=0.13.0
 scikit-learn>=1.3.0
 imbalanced-learn>=0.11.0
 joblib>=1.3.0
+shap>=0.44.0
 jupyter>=1.0.0
 ipykernel>=6.25.0
+
+# =============================================================================
+# REFERENSI JURNAL RELEVAN (untuk proposal & laporan riset)
+# =============================================================================
+#
+# --- A. Klasifikasi Depresi Remaja + Media Sosial & Gaya Hidup (inti topik) ---
+#
+# [1] Setiawan, R., et al. (2026). Depression Risk Prediction Among Teenagers
+#     Using Explainable Machine Learning and Imbalanced Behavioral Data.
+#     International Journal of Artificial Intelligence in Medical Issues (IJAIMI), 4(1).
+#     Relevansi: PALING RELEVAN — menggunakan dataset yang sama (1.200 baris, 13 variabel:
+#     daily_social_media_hours, sleep_hours, stress_level, anxiety_level, dll.),
+#     klasifikasi depresi remaja, Random Forest, penanganan class imbalance (SMOTE,
+#     class weight), feature importance (sleep_hours, stress, anxiety, medsos).
+#     Link: https://doi.org/10.56705/ijaimi.v4i1.436
+#     PDF : https://jurnal.yoctobrain.org/index.php/ijaimi/article/view/436
+#
+# [2] Wang, Y., et al. (2026). Association of problematic short-video use with
+#     adolescent depression: a cross-sectional study and machine learning
+#     identification model construction.
+#     BMC Psychiatry (Springer Nature).
+#     Relevansi: Klasifikasi depresi remaja dengan ML; Random Forest terbaik (AUC 0.863);
+#     fitur tidur & regulasi emosi; menggunakan SMOTE untuk class imbalance.
+#     Link: https://doi.org/10.1186/s12888-026-08024-x
+#
+# [3] Li, Y., et al. (2026). Predicting adolescent depression: an interpretable
+#     machine learning model.
+#     BMC Medical Informatics and Decision Making (Springer Nature).
+#     Relevansi: Prediksi risiko depresi remaja (usia 13–25); perbandingan 5 algoritma ML;
+#     faktor tidur & psikososial sebagai prediktor utama; interpretabilitas model (SHAP).
+#     Link: https://doi.org/10.1186/s12911-026-03482-5
+#
+# [4] Sharma, et al. Early Detection of Adolescent Depressive Symptoms on Social
+#     Media Using a Hybrid Deep Learning Approach.
+#     International Journal of Engineering Research and Technology (IJERT).
+#     Relevansi: Deteksi dini depresi remaja berbasis data media sosial & perilaku digital.
+#     Link: https://www.ijert.org/early-detection-of-adolescent-depressive-symptoms-on-social-media-using-a-hybrid-deep-learning-approach-ijertconv14is020137
+#
+# [5] PLOS Digital Health (2025). Toward developing adolescent-centered machine
+#     learning methods to detect depression: Interviews with Latino adolescents
+#     to identify signals of emotional and somatic symptoms within social media data.
+#     Relevansi: Landasan teoretis deteksi depresi remaja dari pola media sosial
+#     (gejala somatik: tidur, aktivitas fisik, durasi layar) — bukan hanya teks/status.
+#     Link: https://doi.org/10.1371/journal.pdig.0001178
+#
+# --- B. Perbandingan K-NN vs Random Forest + Class Imbalance (metodologi riset) ---
+#
+# [6] Comparison of SMOTE Random Forest and SMOTE K-Nearest Neighbors
+#     Classification Analysis on Imbalanced Data.
+#     Media Statistika (Universitas Diponegoro), 15(2), 198–208.
+#     Relevansi: LANGSUNG RELEVAN — membandingkan SMOTE+RF vs SMOTE+K-NN pada data
+#     tidak seimbang; RF unggul (AUC 96.30% vs K-NN 87.27%); tanpa SMOTE keduanya gagal.
+#     Link: https://doi.org/10.14710/medstat.15.2.198-208
+#
+# [7] Sánchez, V.M., et al. (2020). Random Forest with Sampling Techniques for
+#     Handling Imbalanced Prediction of University Student Depression.
+#     Information (MDPI), 11(11), 519.
+#     Relevansi: Random Forest + SMOTE/hybrid sampling untuk prediksi depresi mahasiswa;
+#     penanganan class imbalance pada data kesehatan mental.
+#     Link: https://doi.org/10.3390/info11110519
+#
+# [8] Explainable machine learning for mental health prediction from social media
+#     behavior: a nested cross-validation study with SHAP and LIME interpretability.
+#     Relevansi: Random Forest terbaik (accuracy 84.2%, AUC 0.88) untuk prediksi depresi
+#     dari perilaku media sosial (screen time, scrolling malam hari); nested 5×5 CV.
+#     Link: https://pmc.ncbi.nlm.nih.gov/articles/PMC12909650/
+#
+# --- C. Media Sosial, Screen Time & Kesehatan Mental Remaja (latar belakang) ---
+#
+# [9] Early Detection of Depression Levels Among Gen-Z Using TikTok Data and
+#     Extra Trees Ensemble Classifier.
+#     Jurnal Teknik Informatika (JUTIF), Universitas Jenderal Soedirman.
+#     Relevansi: Deteksi depresi Gen-Z dari data TikTok; SMOTE untuk balancing;
+#     perbandingan RF, XGBoost, Decision Tree; metrik accuracy/precision/recall/F1.
+#     Link: https://jutif.if.unsoed.ac.id/index.php/jurnal/article/view/5357
+#
+# [10] Depression Detection on Social Media Using Multi-Task Learning with BERT
+#      and Hierarchical Attention: A DSM-5-Guided Approach.
+#      Electronics (MDPI), 15(3), 598.
+#      Relevansi: Pemetaan kriteria klinis (DSM-5) ke fitur perilaku digital
+#      (durasi aktivitas, pola temporal, paparan layar) untuk klasifikasi depresi.
+#      Link: https://doi.org/10.3390/electronics15030598
+#
+# [11] CDC Preventing Chronic Disease (2025). Associations Between Screen Time Use
+#      and Health Outcomes Among US Teenagers.
+#      Relevansi: Bukti epidemiologis — screen time tinggi berkorelasi dengan gejala
+#      depresi, kecemasan, tidur tidak teratur, dan aktivitas fisik rendah pada remaja.
+#      Link: https://www.cdc.gov/pcd/issues/2025/24_0537.htm
+#
+# =============================================================================

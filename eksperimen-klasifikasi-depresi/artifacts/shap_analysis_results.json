@@ -1,0 +1,46 @@
+{
+  "model_analyzed": "FS3",
+  "best_method": "Mutual Information (k=5)",
+  "fs3_shap_ranking": [
+    {
+      "fitur": "stress_level",
+      "mean_abs_shap": 0.155098,
+      "rank_shap": 1
+    },
+    {
+      "fitur": "sleep_hours",
+      "mean_abs_shap": 0.150356,
+      "rank_shap": 2
+    },
+    {
+      "fitur": "daily_social_media_hours",
+      "mean_abs_shap": 0.13308,
+      "rank_shap": 3
+    },
+    {
+      "fitur": "anxiety_level",
+      "mean_abs_shap": 0.131704,
+      "rank_shap": 4
+    },
+    {
+      "fitur": "academic_performance",
+      "mean_abs_shap": 0.017145,
+      "rank_shap": 5
+    }
+  ],
+  "fs0_top5_shap": [
+    "stress_level",
+    "sleep_hours",
+    "anxiety_level",
+    "daily_social_media_hours",
+    "physical_activity"
+  ],
+  "overlap_top5_all_methods": [
+    "anxiety_level",
+    "daily_social_media_hours",
+    "sleep_hours",
+    "stress_level"
+  ],
+  "spearman_shap_chi2": 0.6527,
+  "spearman_shap_mi": 0.8663
+}

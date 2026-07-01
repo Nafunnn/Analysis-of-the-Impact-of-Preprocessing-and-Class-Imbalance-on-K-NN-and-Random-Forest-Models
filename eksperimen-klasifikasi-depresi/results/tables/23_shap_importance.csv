@@ -1,0 +1,15 @@
+fitur,mean_abs_shap,label,rank_shap
+stress_level,0.136415,Tingkat Stres,1
+sleep_hours,0.122522,Jam Tidur,2
+anxiety_level,0.116523,Tingkat Kecemasan,3
+daily_social_media_hours,0.106722,Durasi Media Sosial (jam/hari),4
+physical_activity,0.022157,Aktivitas Fisik,5
+screen_time_ratio,0.018687,Rasio Layar/Tidur,6
+academic_performance,0.018249,Performa Akademik,7
+screen_time_before_sleep,0.012224,Layar Sebelum Tidur (jam),8
+addiction_level,0.00799,Tingkat Kecanduan Digital,9
+gender,0.005696,Jenis Kelamin,10
+age,0.004957,Usia,11
+platform_Instagram,0.002753,Platform: Instagram,12
+social_interaction_level,0.002364,Interaksi Sosial,13
+platform_TikTok,0.002125,Platform: TikTok,14

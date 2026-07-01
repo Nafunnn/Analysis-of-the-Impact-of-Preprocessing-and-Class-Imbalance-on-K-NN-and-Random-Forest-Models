@@ -1,0 +1,6 @@
+indikator,nilai,p_value
+Spearman rank SHAP vs Chi-Square,0.6527,0.0114
+Spearman rank SHAP vs Mutual Information,0.8663,0.0001
+Overlap top-5 SHAP & Chi-Square,"anxiety_level, daily_social_media_hours, sleep_hours, stress_level",
+Overlap top-5 SHAP & MI,"anxiety_level, daily_social_media_hours, physical_activity, sleep_hours, stress_level",
+Overlap top-5 ketiga metode,"anxiety_level, daily_social_media_hours, sleep_hours, stress_level",

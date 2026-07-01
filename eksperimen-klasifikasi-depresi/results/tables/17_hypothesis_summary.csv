@@ -1,0 +1,5 @@
+hipotesis,pernyataan,status,bukti
+H1,MI > Chi-Square pada F1,Sebagian (F1 seri),"FS3=0.9831, FS2=0.9831"
+H2,PCA kehilangan interpretabilitas nama fitur,Diterima,"12 komponen (PC1–PC12), bukan nama fitur asli"
+H3,FS meningkatkan performa vs baseline,Diterima,"Baseline=0.9091, terbaik FS=0.9831"
+H4,Fitur tidur/stres/kecemasan/aktivitas fisik konsisten terpilih,Diterima,"['anxiety_level', 'daily_social_media_hours', 'sleep_hours', 'stress_level']"

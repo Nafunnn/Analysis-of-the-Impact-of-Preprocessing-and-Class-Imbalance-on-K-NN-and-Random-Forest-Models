@@ -1,4 +1,5 @@
 {
+  "research_focus": "feature_selection_comparison",
   "target_col": "depression_label",
   "feature_cols": [
     "age",
@@ -13,12 +14,23 @@
     "anxiety_level",
     "addiction_level",
     "screen_time_ratio",
-    "platform_Both",
     "platform_Instagram",
     "platform_TikTok"
   ],
   "random_state": 42,
   "test_size": 0.2,
+  "classifier_for_evaluation": "RandomForest (class_weight=balanced)",
+  "feature_selection_methods": [
+    "all_features",
+    "PCA",
+    "chi2",
+    "mutual_info"
+  ],
+  "data_files": {
+    "scaled": "train_scaled.csv / test_scaled.csv (PCA, Mutual Information)",
+    "minmax": "train_minmax.csv / test_minmax.csv (Chi-Square)",
+    "unscaled": "train_unscaled.csv / test_unscaled.csv (referensi)"
+  },
   "encoding": {
     "gender": {
       "male": 0,

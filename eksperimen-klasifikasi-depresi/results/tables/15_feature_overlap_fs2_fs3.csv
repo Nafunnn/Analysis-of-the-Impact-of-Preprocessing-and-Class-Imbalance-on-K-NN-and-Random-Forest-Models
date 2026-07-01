@@ -1,0 +1,4 @@
+kategori,fitur
+Konsisten (FS2 & FS3),"anxiety_level, daily_social_media_hours, sleep_hours, stress_level"
+Hanya Chi-Square,"gender, platform_Instagram, platform_TikTok, screen_time_ratio"
+Hanya Mutual Information,academic_performance

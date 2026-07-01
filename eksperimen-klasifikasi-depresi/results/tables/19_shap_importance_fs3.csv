@@ -1,0 +1,6 @@
+fitur,mean_abs_shap,label,rank_shap
+stress_level,0.155098,Tingkat Stres,1
+sleep_hours,0.150356,Jam Tidur,2
+daily_social_media_hours,0.13308,Durasi Media Sosial (jam/hari),3
+anxiety_level,0.131704,Tingkat Kecemasan,4
+academic_performance,0.017145,Performa Akademik,5

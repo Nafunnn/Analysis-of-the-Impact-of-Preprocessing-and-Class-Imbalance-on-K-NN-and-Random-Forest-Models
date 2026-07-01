@@ -1,0 +1,15 @@
+fitur,mi_score,terpilih
+sleep_hours,0.1014,True
+stress_level,0.0828,True
+daily_social_media_hours,0.0797,True
+anxiety_level,0.0733,True
+physical_activity,0.0412,True
+academic_performance,0.0349,False
+screen_time_before_sleep,0.023,False
+screen_time_ratio,0.0226,False
+social_interaction_level,0.0084,False
+platform_TikTok,0.0084,False
+addiction_level,0.0002,False
+gender,0.0,False
+age,0.0,False
+platform_Instagram,0.0,False
