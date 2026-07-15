@@ -10,6 +10,7 @@ Eksperimen Klasifikasi Depresi pada Remaja: Perbandingan Metode Feature Selectio
 | Mata Kuliah | Pembelajaran Mesin |
 | Tipe Dokumen | Laporan Hasil Eksperimen |
 | Dataset | Teen Mental Health Dataset (1.500 observasi) |
+| Demo Aplikasi (Streamlit) | https://feature-selection-dataset-nafan.streamlit.app/ |
 
 ---
 
@@ -25,7 +26,8 @@ Eksperimen Klasifikasi Depresi pada Remaja: Perbandingan Metode Feature Selectio
 8. [Jawaban Rumusan Masalah (RQ)](#8-jawaban-rumusan-masalah-rq)
 9. [Validasi Hipotesis](#9-validasi-hipotesis)
 10. [Kesimpulan dan Saran](#10-kesimpulan-dan-saran)
-11. [Daftar Bukti dan Lampiran](#11-daftar-bukti-dan-lampiran)
+11. [Demo Aplikasi Streamlit](#11-demo-aplikasi-streamlit)
+12. [Daftar Bukti dan Lampiran](#12-daftar-bukti-dan-lampiran)
 
 ---
 
@@ -483,12 +485,47 @@ Secara singkat: **depresi pada data ini terlihat dipengaruhi oleh kombinasi kual
 1. Untuk penelitian lanjutan, bisa ditambahkan validasi eksternal (dataset baru) agar hasil lebih general.
 2. Bisa dibandingkan juga metode feature selection lain (misalnya RFE) tanpa mengubah fokus riset.
 3. Untuk aplikasi praktis, empat fitur konsisten di atas bisa dijadikan fokus monitoring gaya hidup remaja.
+4. Hasil eksperimen juga sudah dibungkus dalam **demo aplikasi Streamlit** agar dosen/penguji bisa melihat EDA, prediksi model, evaluasi FS0–FS3, dan interpretasi SHAP secara interaktif (lihat Bagian 11).
 
 ---
 
-## 11. Daftar Bukti dan Lampiran
+## 11. Demo Aplikasi Streamlit
 
-### 11.1 Notebook Sumber
+Selain notebook dan laporan tertulis, hasil eksperimen juga dipublikasikan sebagai **demo web Streamlit**. Tujuannya supaya pipeline penelitian bisa dilihat secara langsung tanpa harus menjalankan notebook secara lokal.
+
+### 11.1 Link Deployment
+
+**URL aplikasi:** [https://feature-selection-dataset-nafan.streamlit.app/](https://feature-selection-dataset-nafan.streamlit.app/)
+
+> Catatan: aplikasi ini bersifat **edukasi dan pendukung presentasi hasil riset**, bukan alat diagnosis klinis.
+
+### 11.2 Halaman yang Tersedia
+
+| Halaman | Isi |
+|---------|-----|
+| **Home** | Ringkasan model terbaik (FS3), metrik F1 & ROC-AUC |
+| **Dashboard EDA** | Visualisasi interaktif analisis data eksploratif |
+| **Model Demo** | Input data survey → prediksi model FS3 |
+| **Evaluasi Model** | Metrik & visualisasi perbandingan FS0–FS3 |
+| **Interpretasi Hasil** | SHAP, ranking fitur, insight hasil eksperimen |
+| **Dokumentasi** | Dataset, metodologi, dan cara penggunaan |
+
+### 11.3 Keterkaitan dengan Hasil Eksperimen
+
+Aplikasi Streamlit menampilkan hasil yang sama dengan yang dilaporkan di dokumen ini, misalnya:
+
+- model terbaik **FS3 (Mutual Information, k=5)**
+- F1-Score test **0,9831**
+- ROC-AUC test **0,9987**
+- fitur terpilih: `sleep_hours`, `stress_level`, `daily_social_media_hours`, `anxiety_level`, `physical_activity`
+
+Dengan adanya deployment ini, bukti hasil eksperimen tidak hanya ada di folder `results/`, tetapi juga bisa diakses secara online.
+
+---
+
+## 12. Daftar Bukti dan Lampiran
+
+### 12.1 Notebook Sumber
 
 | Notebook | Isi |
 |----------|-----|
@@ -497,7 +534,7 @@ Secara singkat: **depresi pada data ini terlihat dipengaruhi oleh kombinasi kual
 | `notebooks/03_experiment_feature_selection.ipynb` | Perbandingan FS0–FS3 |
 | `notebooks/04_xai_shap_analysis.ipynb` | Analisis SHAP |
 
-### 11.2 Tabel Hasil (Folder `results/tables/`)
+### 12.2 Tabel Hasil (Folder `results/tables/`)
 
 | File | Isi |
 |------|-----|
@@ -515,7 +552,7 @@ Secara singkat: **depresi pada data ini terlihat dipengaruhi oleh kombinasi kual
 | `20_shap_importance_fs0.csv` | Ranking SHAP baseline |
 | `22_rq4_shap_summary.csv` | Ringkasan keselarasan RQ4 |
 
-### 11.3 Gambar Bukti (Folder `results/figures/`)
+### 12.3 Gambar Bukti (Folder `results/figures/`)
 
 | File | Digunakan di bagian |
 |------|---------------------|
@@ -539,7 +576,7 @@ Secara singkat: **depresi pada data ini terlihat dipengaruhi oleh kombinasi kual
 | `24_shap_vs_feature_selection.png` | Perbandingan SHAP vs FS |
 | `25_rank_heatmap_comparison.png` | Heatmap ranking |
 
-### 11.4 Artefak Model
+### 12.4 Artefak Model
 
 | File | Keterangan |
 |------|------------|
@@ -548,12 +585,20 @@ Secara singkat: **depresi pada data ini terlihat dipengaruhi oleh kombinasi kual
 | `artifacts/shap_analysis_results.json` | Ringkasan hasil SHAP |
 | `artifacts/preprocessing_metadata.json` | Metadata preprocessing |
 
+### 12.5 Link Deployment Aplikasi
+
+| Item | Detail |
+|------|--------|
+| Platform | Streamlit Community Cloud |
+| URL | https://feature-selection-dataset-nafan.streamlit.app/ |
+| Fungsi | Demo EDA, prediksi model, evaluasi FS, dan interpretasi SHAP |
+
 ---
 
 ## Ringkasan Satu Paragraf
 
-Dari seluruh eksperimen, metode **Mutual Information (FS3)** menjadi pilihan terbaik untuk klasifikasi depresi pada dataset ini, dengan F1-Score 0,9831 dan ROC-AUC 0,9987. Fitur yang paling konsisten berpengaruh adalah **jam tidur, tingkat stres, tingkat kecemasan, dan durasi media sosial**. Hasil tersebut diperkuat oleh analisis SHAP, sehingga temuan tidak hanya berdasarkan skor seleksi fitur, tetapi juga berdasarkan kontribusi nyata fitur terhadap prediksi model.
+Dari seluruh eksperimen, metode **Mutual Information (FS3)** menjadi pilihan terbaik untuk klasifikasi depresi pada dataset ini, dengan F1-Score 0,9831 dan ROC-AUC 0,9987. Fitur yang paling konsisten berpengaruh adalah **jam tidur, tingkat stres, tingkat kecemasan, dan durasi media sosial**. Hasil tersebut diperkuat oleh analisis SHAP, sehingga temuan tidak hanya berdasarkan skor seleksi fitur, tetapi juga berdasarkan kontribusi nyata fitur terhadap prediksi model. Hasil eksperimen juga sudah dipublikasikan sebagai demo aplikasi Streamlit di [https://feature-selection-dataset-nafan.streamlit.app/](https://feature-selection-dataset-nafan.streamlit.app/).
 
 ---
 
-*Laporan ini disusun berdasarkan output notebook `01`–`04`, tabel di `results/tables/`, dan visualisasi di `results/figures/`.*
+*Laporan ini disusun berdasarkan output notebook `01`–`04`, tabel di `results/tables/`, visualisasi di `results/figures/`, serta demo aplikasi Streamlit yang sudah di-deploy.*
